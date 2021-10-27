@@ -67,6 +67,11 @@ public class thirdPersonMove : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
+        if(Input.GetKeyDown(KeyCode.C) && isGrounded)
+        {
+            anim.SetTrigger("capoeira");
+        }
+
 
 
 
